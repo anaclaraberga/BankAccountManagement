@@ -20,11 +20,10 @@ public class Main {
         double total = 0d;
 
         for (final String line: lines) {
-
             final String[] columns = line.split(",");
             final double amount = Double.parseDouble(columns[1]);
-            total += amount;
 
+            total += amount;
         }
 
         System.out.println("The total for all transactions is " + total);
