@@ -9,14 +9,12 @@ import java.util.List;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    private static final String RESOURCES = "src/main/resources/";
-
     public static void main(String[] args) throws IOException {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("Hello and welcome!");
 
-        final Path path = Paths.get(RESOURCES + args[0]);
+        final Path path = Paths.get("C:\\Users\\ana4e\\OneDrive\\Documentos\\Applications\\Java\\BankAccountManagement\\src\\main\\resources", args[0]);
         final List<String> lines = Files.readAllLines(path);
 
         double total = 0d;
